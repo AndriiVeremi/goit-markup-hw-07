@@ -1,4 +1,5 @@
 /* СТИЛІ НАША КОМАНДА */
+
 .team {
   background-color: #f5f4fa;
 }
@@ -22,8 +23,9 @@
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: var(--white-color-text);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+              0px 1px 1px rgba(0, 0, 0, 0.14),
+              0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -78,11 +80,14 @@
   cursor: pointer;
   border-radius: 50%;
   transition: background-color var(--duration-function) var(--timing-function);
-}
-
-.social-list__button:hover {
-  background-color: var(--blue-primary);
-  fill: var(--white-color-text);
+  &:hover {
+    background-color: var(--blue-primary);
+    fill: var(--white-color-text);
+  }
+  &:focus {
+    background-color: var(--blue-primary);
+    fill: var(--white-color-text);
+  }
 }
 
 .social-list__icon {
@@ -90,8 +95,9 @@
   padding: 12px;
   fill: currentColor;
   transition: fill var(--duration-function) var(--timing-function);
+  &:hover {
+    fill: var(--white-color-text);
+  }
 }
 
-.social-list__icon:hover {
-  fill: var(--white-color-text);
-}
+

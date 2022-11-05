@@ -327,6 +327,14 @@ summary {
   -webkit-transition: color var(--duration-function) var(--timing-function);
   transition: color var(--duration-function) var(--timing-function);
 }
+.header-nav__link:hover,
+.header-contact__link:hover {
+  color: var(--blue-primary);
+}
+.header-nav__link:focus,
+.header-contact__link:focus {
+  color: var(--blue-primary);
+}
 
 .header-nav__link--active {
   color: var(--blue-primary);
@@ -343,13 +351,6 @@ summary {
   border-radius: 4px;
 }
 
-.header-nav__link:hover,
-.header-nav__link:focus,
-.header-contact__link:hover,
-.header-contact__link:focus {
-  color: var(--blue-primary);
-}
-
 .header-contact__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,8 +360,9 @@ summary {
           align-items: center;
   margin-right: 10px;
   fill: currentColor;
+  -webkit-transition: fill var(--duration-function) var(--timing-function);
+  transition: fill var(--duration-function) var(--timing-function);
 }
-
 .header-contact__icon:hover {
   fill: var(--blue-primary);
 }
@@ -598,8 +600,11 @@ summary {
   -webkit-transition: background-color var(--duration-function) var(--timing-function);
   transition: background-color var(--duration-function) var(--timing-function);
 }
-
 .social-list__button:hover {
+  background-color: var(--blue-primary);
+  fill: var(--white-color-text);
+}
+.social-list__button:focus {
   background-color: var(--blue-primary);
   fill: var(--white-color-text);
 }
@@ -611,7 +616,6 @@ summary {
   -webkit-transition: fill var(--duration-function) var(--timing-function);
   transition: fill var(--duration-function) var(--timing-function);
 }
-
 .social-list__icon:hover {
   fill: var(--white-color-text);
 }
@@ -648,6 +652,9 @@ summary {
   -webkit-transition: border var(--duration-function) var(--timing-function);
   transition: border var(--duration-function) var(--timing-function);
 }
+.clients-list__btn:hover {
+  border: 1px solid var(--blue-primary);
+}
 
 .clients-list__icon {
   height: 92px;
@@ -656,13 +663,8 @@ summary {
   -webkit-transition: fill var(--duration-function) var(--timing-function);
   transition: fill var(--duration-function) var(--timing-function);
 }
-
 .clients-list__icon:hover {
   fill: var(--blue-primary);
-}
-
-.clients-list__icon:hover {
-  border: 1px solid var(--blue-primary);
 }
 
 /* СТИЛІ ПІДВАЛ */
@@ -700,6 +702,12 @@ summary {
   -webkit-transition: color var(--duration-function) var(--timing-function);
   transition: color var(--duration-function) var(--timing-function);
 }
+.footer-contact__item:hover {
+  color: var(--blue-primary);
+}
+.footer-contact__item:focus {
+  color: var(--blue-primary);
+}
 
 .footer-contact__item:last-child {
   margin-bottom: 0;
@@ -713,10 +721,9 @@ summary {
   -webkit-transition: color var(--duration-function) var(--timing-function);
   transition: color var(--duration-function) var(--timing-function);
 }
-
-.footer-contact__item:hover,
-.footer-contact__item:focus,
-.footer-contact__link:hover,
+.footer-contact__link:hover {
+  color: var(--blue-primary);
+}
 .footer-contact__link:focus {
   color: var(--blue-primary);
 }
@@ -752,10 +759,12 @@ summary {
   -webkit-transition: background-color var(--duration-function) var(--timing-function);
   transition: background-color var(--duration-function) var(--timing-function);
 }
-
 .footer-social__link:hover {
   background-color: var(--blue-primary);
-  border-radius: 50%;
+  fill: var(--white-color-text);
+}
+.footer-social__link:focus {
+  background-color: var(--blue-primary);
   fill: var(--white-color-text);
 }
 
@@ -764,7 +773,6 @@ summary {
   padding: 12px;
   fill: currentColor;
 }
-
 .footer-social__icon:hover {
   fill: var(--white-color-text);
 }
@@ -837,17 +845,21 @@ summary {
   transition: box-shadow var(--duration-function) var(--timing-function);
   transition: box-shadow var(--duration-function) var(--timing-function), -webkit-box-shadow var(--duration-function) var(--timing-function);
 }
-
-.portfolio-menu__item:not(:last-child) {
-  margin-right: 8px;
+.portfolio-menu__item:hover {
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: none;
 }
-
-.portfolio-menu__item:hover,
 .portfolio-menu__item:focus {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: none;
+}
+
+.portfolio-menu__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-menu__btn {
@@ -866,8 +878,10 @@ summary {
   -webkit-transition: color var(--duration-function) var(--timing-function), background-color var(--duration-function) var(--timing-function);
   transition: color var(--duration-function) var(--timing-function), background-color var(--duration-function) var(--timing-function);
 }
-
-.portfolio-menu__btn:hover,
+.portfolio-menu__btn:hover {
+  color: var(--white-color-text);
+  background-color: var(--blue-primary);
+}
 .portfolio-menu__btn:focus {
   color: var(--white-color-text);
   background-color: var(--blue-primary);
@@ -891,8 +905,11 @@ summary {
   transition: box-shadow var(--duration-function) var(--timing-function);
   transition: box-shadow var(--duration-function) var(--timing-function), -webkit-box-shadow var(--duration-function) var(--timing-function);
 }
-
 .work-list__item:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.work-list__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -905,7 +922,7 @@ summary {
   margin-bottom: 0;
 }
 
-.work-list__item:hover .work-item-text {
+.work-list__item:hover {
   opacity: 1;
 }
 
@@ -1037,7 +1054,7 @@ summary {
   fill: var(--blue-primary);
 }
 
-.modal-title {
+.form__title {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 700;

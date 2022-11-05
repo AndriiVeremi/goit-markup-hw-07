@@ -1,4 +1,5 @@
 /* СТИЛІ ПІДВАЛ */
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -29,6 +30,12 @@
   letter-spacing: 0.03em;
   color: var(--white-color-text);
   transition: color var(--duration-function) var(--timing-function);
+  &:hover {
+    color: var(--blue-primary);
+  }
+  &:focus {
+    color: var(--blue-primary);
+  }
 }
 
 .footer-contact__item:last-child {
@@ -41,13 +48,12 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--duration-function) var(--timing-function);
-}
-
-.footer-contact__item:hover,
-.footer-contact__item:focus,
-.footer-contact__link:hover,
-.footer-contact__link:focus {
-  color: var(--blue-primary);
+  &:hover {
+    color: var(--blue-primary);
+  }
+  &:focus {
+    color: var(--blue-primary);
+  }
 }
 
 .footer-social__title {
@@ -75,22 +81,23 @@
   height: 44px;
   cursor: pointer;
   transition: background-color var(--duration-function) var(--timing-function);
-}
-
-.footer-social__link:hover {
-  background-color: var(--blue-primary);
-  border-radius: 50%;
-  fill: var(--white-color-text);
+  &:hover {
+    background-color: var(--blue-primary);
+    fill: var(--white-color-text);
+  }
+  &:focus {
+    background-color: var(--blue-primary);
+    fill: var(--white-color-text);
+  }
 }
 
 .footer-social__icon {
   width: 44px;
   padding: 12px;
   fill: currentColor;
-}
-
-.footer-social__icon:hover {
-  fill: var(--white-color-text);
+  &:hover {
+    fill: var(--white-color-text);
+  } 
 }
 
 .subscript {

@@ -1,4 +1,5 @@
 /* СТИЛІ ПОСТІЙНІ КЛІЄНТИ */
+
 .clients__title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -26,6 +27,9 @@
   border: 1px solid var(--default-color-icon);
   border-radius: 4px;
   transition: border var(--duration-function) var(--timing-function);
+  &:hover {
+    border: 1px solid var(--blue-primary);
+  } 
 }
 
 .clients-list__icon {
@@ -33,12 +37,7 @@
   width: 170px;
   fill: currentColor;
   transition: fill var(--duration-function) var(--timing-function);
-}
-
-.clients-list__icon:hover {
-  fill: var(--blue-primary);
-}
-
-.clients-list__icon:hover {
-  border: 1px solid var(--blue-primary);
+  &:hover {
+    fill: var(--blue-primary);
+  }
 }

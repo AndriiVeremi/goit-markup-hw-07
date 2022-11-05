@@ -1,61 +1,67 @@
 /* СТИЛІ ШАПКИ САЙТУ */
 .header {
-    border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .head-nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-    display: inline-block;
-    font-family: 'Raleway';
-    font-size: 26px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+  display: inline-block;
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
 }
 
 .logo--blue {
-    color: var(--blue-primary);
+  color: var(--blue-primary);
 }
 
 .header-nav__list {
-    display: flex;
-    margin-left: 93px;
+  display: flex;
+  margin-left: 93px;
 }
 
 .header-contact {
-    display: flex;
-    margin-left: auto;
-    color: var(--secondory-color-text);
+  display: flex;
+  margin-left: auto;
+  color: var(--secondory-color-text);
 }
 
 .header-nav__item,
 .header-contact__item {
-    position: relative;
+  position: relative;
 }
 
 .header-nav__item:not(:last-child),
 .header-contact__item:not(:last-child) {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .header-nav__link,
 .header-contact__link {
-    display: inline-flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    transition: color var(--duration-function) var(--timing-function);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  transition: color var(--duration-function) var(--timing-function);
+  &:hover {
+    color: var(--blue-primary);
+  }
+  &:focus {
+    color: var(--blue-primary);
+  }
 }
 
 .header-nav__link--active {
-    color: var(--blue-primary); 
+  color: var(--blue-primary);
 }
 
 .header-nav__link--active::after {
@@ -70,20 +76,13 @@
   border-radius: 4px;
 }
 
-.header-nav__link:hover,
-.header-nav__link:focus,
-.header-contact__link:hover,
-.header-contact__link:focus {
-    color: var(--blue-primary);
-}
-
 .header-contact__icon {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-    fill: currentColor;
-}
-
-.header-contact__icon:hover {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill var(--duration-function) var(--timing-function);
+  &:hover {
     fill: var(--blue-primary);
+  }
 }

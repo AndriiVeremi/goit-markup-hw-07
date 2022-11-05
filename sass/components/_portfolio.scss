@@ -11,19 +11,24 @@
 .portfolio-menu__item {
   border-radius: 4px;
   transition: box-shadow var(--duration-function) var(--timing-function);
+  &:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),   
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+  }
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+  }
 }
 
 .portfolio-menu__item:not(:last-child) {
   margin-right: 8px;
-}
-
-.portfolio-menu__item:hover,
-.portfolio-menu__item:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
-              0px 1px 2px rgba(0, 0, 0, 0.08),
-              0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  border: none;
 }
 
 .portfolio-menu__btn {
@@ -40,13 +45,15 @@
   letter-spacing: 0.03em;
   text-align: center;
   transition: color var(--duration-function) var(--timing-function),
-  background-color var(--duration-function) var(--timing-function);
-}
-
-.portfolio-menu__btn:hover,
-.portfolio-menu__btn:focus {
-  color: var(--white-color-text);
-  background-color: var(--blue-primary);
+    background-color var(--duration-function) var(--timing-function);
+  &:hover {
+    color: var(--white-color-text);
+    background-color: var(--blue-primary);
+  }
+  &:focus {
+    color: var(--white-color-text);
+    background-color: var(--blue-primary);
+  }
 }
 
 /* СТИЛІ НАШІ РОБОТИ */
@@ -61,11 +68,16 @@
   margin-right: 30px;
   margin-bottom: 30px;
   transition: box-shadow var(--duration-function) var(--timing-function);
-}
-
-.work-list__item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .work-list__item:nth-child(3n) {
@@ -76,7 +88,7 @@
   margin-bottom: 0;
 }
 
-.work-list__item:hover .work-item-text {
+.work-list__item:hover {
   opacity: 1;
 }
 

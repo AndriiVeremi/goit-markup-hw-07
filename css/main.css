@@ -508,7 +508,7 @@ summary {
   background-color: #f5f4fa;
 }
 
-.team-title {
+.team__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.1;
@@ -516,7 +516,7 @@ summary {
   text-align: center;
 }
 
-.team-list {
+.person-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,7 +525,7 @@ summary {
   text-align: center;
 }
 
-.team-list__item {
+.person-list__item {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -535,20 +535,20 @@ summary {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list__item:nth-child(4n) {
+.person-list__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.team-list__item:nth-last-child(-n+4) {
+.person-list__item:nth-last-child(-n+4) {
   margin-bottom: 0;
 }
 
-.team-list__meta {
+.user-meta {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-list__title {
+.user-meta__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -556,7 +556,7 @@ summary {
   letter-spacing: 0.03em;
 }
 
-.team-list__text {
+.user-meta__work {
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 16px;
@@ -670,7 +670,7 @@ summary {
   margin-right: 70px;
 }
 
-.logo-footer {
+.footer-logo {
   display: block;
   margin-bottom: 20px;
   font-family: "Raleway";
@@ -681,15 +681,15 @@ summary {
   color: var(--white-color-text);
 }
 
-.logo-footer-blue {
+.footer-logo__blue {
   color: var(--blue-primary);
 }
 
-.footer address {
+.footer-contact {
   font-style: normal;
 }
 
-.footer-item {
+.footer-contact__item {
   margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.7;
@@ -699,11 +699,11 @@ summary {
   transition: color var(--duration-function) var(--timing-function);
 }
 
-.footer-item:last-child {
+.footer-contact__item:last-child {
   margin-bottom: 0;
 }
 
-.footer-link {
+.footer-contact__link {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -712,10 +712,10 @@ summary {
   transition: color var(--duration-function) var(--timing-function);
 }
 
-.footer-item:hover,
-.footer-item:focus,
-.footer-link:hover,
-.footer-link:focus {
+.footer-contact__item:hover,
+.footer-contact__item:focus,
+.footer-contact__link:hover,
+.footer-contact__link:focus {
   color: var(--blue-primary);
 }
 

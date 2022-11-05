@@ -3,7 +3,7 @@
   background-color: #f5f4fa;
 }
 
-.team-title {
+.team__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.1;
@@ -11,13 +11,13 @@
   text-align: center;
 }
 
-.team-list {
+.person-list {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
 }
 
-.team-list__item {
+.person-list__item {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -27,20 +27,20 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list__item:nth-child(4n) {
+.person-list__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.team-list__item:nth-last-child(-n + 4) {
+.person-list__item:nth-last-child(-n + 4) {
   margin-bottom: 0;
 }
 
-.team-list__meta {
+.user-meta {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-list__title {
+.user-meta__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -48,7 +48,7 @@
   letter-spacing: 0.03em;
 }
 
-.team-list__text {
+.user-meta__work {
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 16px;

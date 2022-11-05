@@ -276,14 +276,15 @@ summary {
           align-items: center;
 }
 
-.header-logo {
+.logo {
+  display: inline-block;
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.1;
   letter-spacing: 0.03em;
 }
 
-.header-logo__blue {
+.logo--blue {
   color: var(--blue-primary);
 }
 
@@ -327,11 +328,11 @@ summary {
   transition: color var(--duration-function) var(--timing-function);
 }
 
-.current {
+.header-nav__link--active {
   color: var(--blue-primary);
 }
 
-.current::after {
+.header-nav__link--active::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -681,19 +682,9 @@ summary {
   margin-right: 70px;
 }
 
-.footer-logo {
-  display: block;
+.footer-adres__logo {
   margin-bottom: 20px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-size: 26px;
-  line-height: 1;
-  letter-spacing: 0.03em;
   color: var(--white-color-text);
-}
-
-.footer-logo__blue {
-  color: var(--blue-primary);
 }
 
 .footer-contact {

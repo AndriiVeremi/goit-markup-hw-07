@@ -266,7 +266,7 @@ summary {
   border-bottom: 1px solid #ececec;
 }
 
-.header-nav {
+.head-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,18 +275,18 @@ summary {
           align-items: center;
 }
 
-.header__logo {
+.header-logo {
   font-family: "Raleway";
   font-size: 26px;
   line-height: 1.1;
   letter-spacing: 0.03em;
 }
 
-.logo__blue {
+.header-logo__blue {
   color: var(--blue-primary);
 }
 
-.header-list {
+.header-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,17 +301,17 @@ summary {
   color: var(--secondory-color-text);
 }
 
-.header-list__item,
+.header-nav__item,
 .header-contact__item {
   position: relative;
 }
 
-.header-list__item:not(:last-child),
+.header-nav__item:not(:last-child),
 .header-contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-list__link,
+.header-nav__link,
 .header-contact__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -341,8 +341,8 @@ summary {
   border-radius: 4px;
 }
 
-.header-list__link:hover,
-.header-list__link:focus,
+.header-nav__link:hover,
+.header-nav__link:focus,
 .header-contact__link:hover,
 .header-contact__link:focus {
   color: var(--blue-primary);
@@ -465,7 +465,7 @@ summary {
   letter-spacing: 0.03em;
 }
 
-.benefits-title {
+.benefits__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.1;
@@ -473,7 +473,7 @@ summary {
   text-align: center;
 }
 
-.benefits-list {
+.product-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,11 +482,11 @@ summary {
           justify-content: space-between;
 }
 
-.benefits-list__item {
+.product-list__item {
   position: relative;
 }
 
-.benefits-list__text {
+.product-list__text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -606,7 +606,7 @@ summary {
   fill: var(--white-color-text);
 }
 
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.1;

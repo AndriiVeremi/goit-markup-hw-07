@@ -1,7 +1,3 @@
-@import "./utils/vars"
-@import "./base/normalize"
-@import "./components/page-header"
-
 :root {
     --primary-color-text: #212121;
     --blue-primary: #2196f3;
@@ -56,10 +52,6 @@ body {
     font-weight: 400;
     color: var(--primary-color-text);
     margin: 0;
-}
-
-.current {
-    background-color: #188ce8
 }
 
 .visually-hidden {

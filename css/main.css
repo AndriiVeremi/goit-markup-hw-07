@@ -348,8 +348,7 @@ summary {
   color: var(--blue-primary);
 }
 
-.header-contact__icon-mail,
-.header-contact__icon-tel {
+.header-contact__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,8 +359,7 @@ summary {
   fill: currentColor;
 }
 
-.header-contact__icon-mail:hover,
-.header-contact__icon-tel:hover {
+.header-contact__icon:hover {
   fill: var(--blue-primary);
 }
 

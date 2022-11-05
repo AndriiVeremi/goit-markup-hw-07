@@ -75,15 +75,13 @@
     color: var(--blue-primary);
 }
 
-.header-contact__icon-mail,
-.header-contact__icon-tel {
+.header-contact__icon {
     display: flex;
     align-items: center;
     margin-right: 10px;
     fill: currentColor;
 }
 
-.header-contact__icon-mail:hover,
-.header-contact__icon-tel:hover {
+.header-contact__icon:hover {
     fill: var(--blue-primary);
 }

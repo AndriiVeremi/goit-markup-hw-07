@@ -262,6 +262,7 @@ summary {
   display: list-item;
 }
 
+/* СТИЛІ ШАПКИ САЙТУ */
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -363,6 +364,7 @@ summary {
   fill: var(--blue-primary);
 }
 
+/* СТИЛІ ГОЛОВНОГО БЛОКА */
 .hero {
   height: 600px;
   max-width: 1600px;
@@ -403,6 +405,7 @@ summary {
   border: 1px solid transparent;
 }
 
+/* СТИЛІ ІНФОРМАЦІЙНОГО БЛОКА */
 .info-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,7 +468,8 @@ summary {
   letter-spacing: 0.03em;
 }
 
-.benefits__title {
+/* СТИЛІ ЧИМ ЗАЙМАЄМОСЯ */
+.what-dowedo__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.1;
@@ -504,6 +508,7 @@ summary {
   color: var(--white-color-text);
 }
 
+/* СТИЛІ НАША КОМАНДА */
 .team {
   background-color: #f5f4fa;
 }
@@ -610,6 +615,7 @@ summary {
   fill: var(--white-color-text);
 }
 
+/* СТИЛІ ПОСТІЙНІ КЛІЄНТИ */
 .clients__title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -658,6 +664,7 @@ summary {
   border: 1px solid var(--blue-primary);
 }
 
+/* СТИЛІ ПІДВАЛ */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1280,15 +1287,4 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-/* СТИЛІ ШАПКИ САЙТУ */
-/* СТИЛІ ГОЛОВНОГО БЛОКА */
-/* СТИЛІ ІНФОРМАЦІЙНОГО БЛОКА */
-/* СТИЛІ ЧИМ ЗАЙМАЄМОСЯ */
-/* СТИЛІ НАША КОМАНДА */
-/* СТИЛІ ПОСТІЙНІ КЛІЄНТИ */
-/* СТИЛІ ПІДВАЛ */
-/* ПОРТФОЛІО */
-/* СТИЛІ МЕНЮ ПОРТФОЛІО */
-/* СТИЛІ МОДАЛЬНОГО ВІКНА *//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

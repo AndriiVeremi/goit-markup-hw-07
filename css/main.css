@@ -493,11 +493,11 @@ body {
   padding-top: 94px;
 }
 
-.info-list__item:not(:last-child), .icon-antena:not(:last-child)::before {
+.info-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.info-list__item::before, .icon-antena::before {
+.info-list__item::before {
   display: block;
   content: "";
   margin-bottom: 30px;

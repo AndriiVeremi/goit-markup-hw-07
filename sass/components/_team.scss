@@ -27,14 +27,12 @@
               0px 1px 1px rgba(0, 0, 0, 0.14),
               0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.person-list__item:nth-child(4n) {
-  margin-right: 0;
-}
-
-.person-list__item:nth-last-child(-n + 4) {
-  margin-bottom: 0;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+  &:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
 }
 
 .user-meta {
@@ -80,10 +78,7 @@
   cursor: pointer;
   border-radius: 50%;
   transition: background-color var(--duration-function) var(--timing-function);
-  &:hover {
-    background-color: var(--blue-primary);
-    fill: var(--white-color-text);
-  }
+  &:hover,
   &:focus {
     background-color: var(--blue-primary);
     fill: var(--white-color-text);
@@ -99,5 +94,3 @@
     fill: var(--white-color-text);
   }
 }
-
-

@@ -1,4 +1,5 @@
 /* СТИЛІ ІНФОРМАЦІЙНОГО БЛОКА */
+
 .info-list {
   display: flex;
   align-items: stretch;
@@ -6,7 +7,7 @@
   padding-top: 94px;
 }
 
-.info-list .info-list__item:not(:last-child) {
+.info-list__item:not(:last-child) {
   margin-right: 30px;
 }
 

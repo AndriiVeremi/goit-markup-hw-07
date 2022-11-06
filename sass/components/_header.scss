@@ -1,4 +1,5 @@
 /* СТИЛІ ШАПКИ САЙТУ */
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -52,9 +53,7 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
   transition: color var(--duration-function) var(--timing-function);
-  &:hover {
-    color: var(--blue-primary);
-  }
+  &:hover,
   &:focus {
     color: var(--blue-primary);
   }
@@ -62,18 +61,16 @@
 
 .header-nav__link--active {
   color: var(--blue-primary);
-}
-
-.header-nav__link--active::after {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: 0;
-
-  background-color: var(--blue-primary);
-  width: 100%;
-  height: 4px;
-  border-radius: 4px;
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue-primary);
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+  }
 }
 
 .header-contact__icon {

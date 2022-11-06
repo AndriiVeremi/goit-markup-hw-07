@@ -28,14 +28,7 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--white-color-text);
   transition: color var(--duration-function) var(--timing-function);
-  &:hover {
-    color: var(--blue-primary);
-  }
-  &:focus {
-    color: var(--blue-primary);
-  }
 }
 
 .footer-contact__item:last-child {
@@ -48,9 +41,10 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--duration-function) var(--timing-function);
-  &:hover {
-    color: var(--blue-primary);
+  &--color {
+    color: var(--white-color-text); 
   }
+  &:hover,
   &:focus {
     color: var(--blue-primary);
   }
@@ -81,10 +75,7 @@
   height: 44px;
   cursor: pointer;
   transition: background-color var(--duration-function) var(--timing-function);
-  &:hover {
-    background-color: var(--blue-primary);
-    fill: var(--white-color-text);
-  }
+  &:hover,
   &:focus {
     background-color: var(--blue-primary);
     fill: var(--white-color-text);
@@ -95,9 +86,6 @@
   width: 44px;
   padding: 12px;
   fill: currentColor;
-  &:hover {
-    fill: var(--white-color-text);
-  } 
 }
 
 .subscript {

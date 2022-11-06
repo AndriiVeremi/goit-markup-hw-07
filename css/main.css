@@ -1224,18 +1224,6 @@ body {
   margin: -1px;
 }
 
-.police {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .police__icon {
   border: 2px solid #000;
   border-radius: 2px;

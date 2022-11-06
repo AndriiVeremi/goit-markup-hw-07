@@ -1,11 +1,9 @@
-:root {
-  --primary-color-text: #212121;
-  --blue-primary: #2196f3;
-  --white-color-text: #ffffff;
-  --dark-background-color: #2f303a;
-  --default-color-icon: #afb1b8;
-  --secondory-color-text: #757575;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --duration-function: 950ms;
-}
+$primary-blue-color:#2196f3;
+$primary-text-color:#212121;
+$secondary-text-color:#757575;
+$white-color-text:#ffffff; 
+$dark-background-color:#2f303a;
+$color-icon: #afb1b8;
 
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$duration-function: 250ms;

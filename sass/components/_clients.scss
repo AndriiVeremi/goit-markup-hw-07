@@ -22,16 +22,16 @@
 .clients-list__link {
   display: block;
   padding: 0;
-  color: var(--default-color-icon);
-  background-color: var(--white-color-text);
+  color: $color-icon;
+  background-color: $white-color-text;
   width: 170px;
   height: 92px;
   cursor: pointer;
-  border: 1px solid var(--default-color-icon);
+  border: 1px solid $color-icon;
   border-radius: 4px;
-  transition: border var(--duration-function) var(--timing-function);
+  transition: border $duration-function $timing-function;
   &:hover {
-    border: 1px solid var(--blue-primary);
+    border: 1px solid $primary-blue-color;
   } 
 }
 
@@ -39,9 +39,9 @@
   height: 92px;
   width: 170px;
   fill: currentColor;
-  transition: fill var(--duration-function) var(--timing-function);
+  transition: fill $duration-function $timing-function;
   &:hover {
-    fill: var(--blue-primary);
+    fill: $primary-blue-color;
   }
  
 }

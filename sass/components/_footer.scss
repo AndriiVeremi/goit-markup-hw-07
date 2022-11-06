@@ -3,7 +3,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--dark-background-color);
+  background-color: $dark-background-color;
 }
 
 .footer-nav {
@@ -16,7 +16,7 @@
 
 .footer-adres__logo {
   margin-bottom: 20px;
-  color: var(--white-color-text);
+  color: $white-color-text;
 }
 
 .footer-contact {
@@ -27,7 +27,7 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  transition: color var(--duration-function) var(--timing-function);
+  transition: color $duration-function $timing-function;
   margin-bottom: 9px;
   &:last-child {
     margin-bottom: 0;
@@ -39,13 +39,13 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  transition: color var(--duration-function) var(--timing-function);
+  transition: color $duration-function $timing-function;
   &--color {
-    color: var(--white-color-text); 
+    color: $white-color-text; 
   }
   &:hover,
   &:focus {
-    color: var(--blue-primary);
+    color: $primary-blue-color;
   }
 }
 
@@ -54,7 +54,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-color-text);
+  color: $white-color-text;
   margin-bottom: 20px;
 }
 
@@ -73,16 +73,16 @@
 
 .footer-social__link {
   display: flex;
-  color: var(--white-color-text);
+  color: $white-color-text;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   height: 44px;
   cursor: pointer;
-  transition: background-color var(--duration-function) var(--timing-function);
+  transition: background-color $duration-function $timing-function;
   &:hover,
   &:focus {
-    background-color: var(--blue-primary);
-    fill: var(--white-color-text);
+    background-color: $primary-blue-color;
+    fill: $white-color-text;
   }
 }
 
@@ -101,7 +101,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-color-text);
+  color: $white-color-text;
 }
 
 .subscript__form {
@@ -111,7 +111,7 @@
   width: 358px;
   height: 50px;
   padding: 16px 15px;
-  color: var(--white-color-text);
+  color: $white-color-text;
 }
 
 .subscript__btn {
@@ -126,7 +126,7 @@
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  color: var(--white-color-text);
+  color: $white-color-text;
   border: none;
 }
 

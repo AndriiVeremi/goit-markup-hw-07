@@ -1,16 +1,12 @@
 /* СТИЛІ НАША КОМАНДА */
 
 .team {
-  @include section ();
+  @include section();
   background-color: #f5f4fa;
 }
 
 .team__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-align: center;
+  @include title();
 }
 
 .person-list {
@@ -67,8 +63,11 @@
   padding-right: 32px;
 }
 
-.social-list__item:not(:last-child) {
+.social-list__item {
   margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social-list__button {
@@ -87,9 +86,7 @@
 }
 
 .social-list__icon {
-  width: 44px;
-  padding: 12px;
-  fill: currentColor;
+  @include social-icon();
   transition: fill var(--duration-function) var(--timing-function);
   &:hover {
     fill: var(--white-color-text);

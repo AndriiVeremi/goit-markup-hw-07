@@ -262,7 +262,7 @@ summary {
   display: list-item;
 }
 
-/* Reset styles */
+/* Стилі нормалізатора */ /* Reset styles */
 a {
   color: inherit;
   text-decoration: none;
@@ -296,6 +296,7 @@ li {
   outline: none;
 }
 
+/* Стилі reset */
 /* СТИЛІ КОНТЕЙНЕРА */
 .container {
   width: 1200px;
@@ -313,6 +314,8 @@ body {
   margin: 0;
 }
 
+/* Стилі контейнера і body */
+/* Mixin */
 :root {
   --primary-color-text: #212121;
   --blue-primary: #2196f3;
@@ -324,6 +327,7 @@ body {
   --duration-function: 950ms;
 }
 
+/* Змінні CSS */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -338,6 +342,7 @@ body {
   margin: -1px;
 }
 
+/* visually-hidden */
 /* СТИЛІ ШАПКИ САЙТУ */
 .header {
   border-bottom: 1px solid #ececec;
@@ -384,9 +389,13 @@ body {
   position: relative;
 }
 
-.header-nav__item:not(:last-child),
-.header-contact__item:not(:last-child) {
+.header-nav__item,
+.header-contact__item {
   margin-right: 50px;
+}
+.header-nav__item:last-child,
+.header-contact__item:last-child {
+  margin-right: 0;
 }
 
 .header-nav__link,
@@ -439,6 +448,7 @@ body {
   fill: var(--blue-primary);
 }
 
+/* Стилі шапки сайта*/
 /* СТИЛІ ГОЛОВНОГО БЛОКА */
 .hero {
   height: 600px;
@@ -480,6 +490,7 @@ body {
   border: 1px solid transparent;
 }
 
+/* Стилі блока герой */
 /* СТИЛІ ІНФОРМАЦІЙНОГО БЛОКА */
 .info-list {
   display: -webkit-box;
@@ -493,8 +504,11 @@ body {
   padding-top: 94px;
 }
 
-.info-list__item:not(:last-child) {
+.info-list__item {
   margin-right: 30px;
+}
+.info-list__item:last-child {
+  margin-right: 0;
 }
 
 .info-list__item::before {
@@ -543,6 +557,7 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Стилі інфо блока */
 /* СТИЛІ ЧИМ ЗАЙМАЄМОСЯ */
 .what-dowedo {
   padding-top: 94px;
@@ -588,6 +603,7 @@ body {
   color: var(--white-color-text);
 }
 
+/* Стилі блока Чим ми займаємося */
 /* СТИЛІ НАША КОМАНДА */
 .team {
   padding-top: 94px;
@@ -661,8 +677,11 @@ body {
   padding-right: 32px;
 }
 
-.social-list__item:not(:last-child) {
+.social-list__item {
   margin-right: 10px;
+}
+.social-list__item:last-child {
+  margin-right: 0;
 }
 
 .social-list__button {
@@ -693,6 +712,7 @@ body {
   fill: var(--white-color-text);
 }
 
+/* Стилі блока Наша команда */
 /* СТИЛІ ПОСТІЙНІ КЛІЄНТИ */
 .clients {
   padding-top: 94px;
@@ -748,6 +768,7 @@ body {
   fill: var(--blue-primary);
 }
 
+/* Стилі блока Постійні клієнти */
 /* СТИЛІ ПІДВАЛ */
 .footer {
   padding-top: 60px;
@@ -775,14 +796,13 @@ body {
 }
 
 .footer-contact__item {
-  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   -webkit-transition: color var(--duration-function) var(--timing-function);
   transition: color var(--duration-function) var(--timing-function);
+  margin-bottom: 9px;
 }
-
 .footer-contact__item:last-child {
   margin-bottom: 0;
 }
@@ -817,8 +837,11 @@ body {
   display: flex;
 }
 
-.footer-social__item:not(:last-child) {
+.footer-social__item {
   margin-right: 10px;
+}
+.footer-social__item:last-child {
+  margin-right: 0;
 }
 
 .footer-social__link {
@@ -893,6 +916,7 @@ body {
   margin-left: 10px;
 }
 
+/* Стилі блока Підвал */
 /* ПОРТФОЛІО */
 /* СТИЛІ МЕНЮ ПОРТФОЛІО */
 .portfolio {
@@ -912,20 +936,20 @@ body {
 
 .portfolio-menu__item {
   border-radius: 4px;
+  margin-right: 8px;
   -webkit-transition: -webkit-box-shadow var(--duration-function) var(--timing-function);
   transition: -webkit-box-shadow var(--duration-function) var(--timing-function);
   transition: box-shadow var(--duration-function) var(--timing-function);
   transition: box-shadow var(--duration-function) var(--timing-function), -webkit-box-shadow var(--duration-function) var(--timing-function);
+}
+.portfolio-menu__item:last-child {
+  margin-right: 0;
 }
 .portfolio-menu__item:hover, .portfolio-menu__item:focus {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border: none;
-}
-
-.portfolio-menu__item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .portfolio-menu__btn {
@@ -1042,6 +1066,7 @@ body {
   color: var(--secondory-color-text);
 }
 
+/* Стилі сторінки Портфоліо */
 .backdrop {
   position: fixed;
   top: 0;
@@ -1257,4 +1282,6 @@ body {
 }
 .modal-btn:hover {
   background-color: #188ce8;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* Стилі Модального вікна *//*# sourceMappingURL=main.css.map */

@@ -1,18 +1,18 @@
-@import "./base/normalize";
-@import "./base/reset-styles";
-@import "./base/base-styles";
-@import "./utils/mixin";
-@import "./utils/vars";
-@import "./utils/visually-hidden";
-@import "./components/header";
-@import "./components/hero";
-@import "./components/info";
-@import "./components/what-dowedo";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/portfolio";
-@import "./components/modal";
+@import "./base/normalize";            /* Стилі нормалізатора */
+@import "./base/reset-styles";         /* Стилі reset */
+@import "./base/base-styles";          /* Стилі контейнера і body */
+@import "./utils/mixin";               /* Mixin */
+@import "./utils/vars";                /* Змінні CSS */
+@import "./utils/visually-hidden";     /* visually-hidden */
+@import "./components/header";         /* Стилі шапки сайта*/
+@import "./components/hero";           /* Стилі блока герой */
+@import "./components/info";           /* Стилі інфо блока */
+@import "./components/what-dowedo";    /* Стилі блока Чим ми займаємося */
+@import "./components/team";           /* Стилі блока Наша команда */
+@import "./components/clients";        /* Стилі блока Постійні клієнти */
+@import "./components/footer";         /* Стилі блока Підвал */
+@import "./components/portfolio";      /* Стилі сторінки Портфоліо */
+@import "./components/modal";          /* Стилі Модального вікна */
 
 
 

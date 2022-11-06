@@ -37,9 +37,12 @@
   position: relative;
 }
 
-.header-nav__item:not(:last-child),
-.header-contact__item:not(:last-child) {
+.header-nav__item,
+.header-contact__item {
   margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .header-nav__link,

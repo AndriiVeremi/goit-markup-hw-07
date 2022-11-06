@@ -19,7 +19,7 @@
   }
 }
 
-.clients-list__btn {
+.clients-list__link {
   display: block;
   padding: 0;
   color: var(--default-color-icon);
@@ -43,4 +43,5 @@
   &:hover {
     fill: var(--blue-primary);
   }
+ 
 }

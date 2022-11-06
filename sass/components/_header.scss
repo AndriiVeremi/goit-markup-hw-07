@@ -1,7 +1,10 @@
 /* СТИЛІ ШАПКИ САЙТУ */
 
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: none;
+  &--border {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 .head-nav {
@@ -15,10 +18,9 @@
   font-size: 26px;
   line-height: 1.1;
   letter-spacing: 0.03em;
-}
-
-.logo--blue {
+  &--blue {
   color: var(--blue-primary);
+}
 }
 
 .header-nav__list {

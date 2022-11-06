@@ -345,6 +345,9 @@ body {
 /* visually-hidden */
 /* СТИЛІ ШАПКИ САЙТУ */
 .header {
+  border-bottom: none;
+}
+.header--border {
   border-bottom: 1px solid #ececec;
 }
 
@@ -364,7 +367,6 @@ body {
   line-height: 1.1;
   letter-spacing: 0.03em;
 }
-
 .logo--blue {
   color: var(--blue-primary);
 }
@@ -740,7 +742,7 @@ body {
   margin-right: 0;
 }
 
-.clients-list__btn {
+.clients-list__link {
   display: block;
   padding: 0;
   color: var(--default-color-icon);
@@ -753,7 +755,7 @@ body {
   -webkit-transition: border var(--duration-function) var(--timing-function);
   transition: border var(--duration-function) var(--timing-function);
 }
-.clients-list__btn:hover {
+.clients-list__link:hover {
   border: 1px solid var(--blue-primary);
 }
 

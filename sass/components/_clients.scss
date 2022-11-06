@@ -1,5 +1,9 @@
 /* СТИЛІ ПОСТІЙНІ КЛІЄНТИ */
 
+.clients {
+  @include section ();
+}
+
 .clients__title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -12,8 +16,11 @@
   display: inline-flex;
 }
 
-.clients-list__item:not(:last-child) {
+.clients-list__item {
   margin-right: 30px; 
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .clients-list__btn {

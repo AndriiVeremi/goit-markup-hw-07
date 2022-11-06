@@ -1,6 +1,7 @@
 /* СТИЛІ НАША КОМАНДА */
 
 .team {
+  @include section ();
   background-color: #f5f4fa;
 }
 

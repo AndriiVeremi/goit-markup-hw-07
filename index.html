@@ -100,7 +100,7 @@
 
       <!-- ЧИМ ЗАЙМАЄМОСЯ-->
 
-      <section class="what-dowedo section">
+      <section class="what-dowedo">
         <div class="container">
           <h2 class="what-dowedo__title">Чим ми займаємося</h2>
           <ul class="product-list">
@@ -122,7 +122,7 @@
 
       <!-- НАША КОМАНДА-->
 
-      <section class="team section">
+      <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="person-list">
@@ -293,7 +293,7 @@
 
       <!-- ПОСТІЙНІ КЛІЄНТИ-->
 
-      <section class="clients section">
+      <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients-list">
@@ -435,48 +435,49 @@
             <use href="./images/icons/icons.svg#close"></use>
           </svg>
         </button>
-        <form class="form" autocomplete="off">
-          <p class="form__title">Залиште свої дані, ми вам передзвонимо</p>
-          <div class="form-callback">
-            <input type="text" class="form-input" name="user-name" id="name" />
-            <label for="name" class="form-label">Ім'я</label>
-            <svg width="18" height="18" class="form-icon">
+        <form class="callback" autocomplete="off">
+          <p class="callback__title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="form">
+            <input type="text" class="form__input" name="user-name" id="name" />
+            <label for="name" class="form__label">Ім'я</label>
+            <svg width="18" height="18" class="form__icon">
               <use href="./images/icons/icons.svg#person"></use>
             </svg>
           </div>
-          <div class="form-callback">
-            <input type="tel" class="form-input" name="user-tel" id="tel" />
-            <label for="tel" class="form-label">Телефон</label>
-            <svg width="18" height="18" class="form-icon">
+          <div class="form">
+            <input type="tel" class="form__input" name="user-tel" id="tel" />
+            <label for="tel" class="form__label">Телефон</label>
+            <svg width="18" height="18" class="form__icon">
               <use href="./images/icons/icons.svg#phone"></use>
             </svg>
           </div>
-          <div class="form-callback">
-            <input type="email" class="form-input" name="user-mail" id="mail" />
-            <label for="mail" class="form-label">Пошта</label>
-            <svg width="18" height="18" class="form-icon">
+          <div class="form">
+            <input type="email" class="form__input" name="user-mail" id="mail" />
+            <label for="mail" class="form__label">Пошта</label>
+            <svg width="18" height="18" class="form__icon">
               <use href="./images/icons/icons.svg#email"></use>
             </svg>
           </div>
-          <div class="form-callback">
+          <div class="form">
             <textarea
               name="user-comments"
-              class="form-input"
+              class="form__input form__input--textarea"
               id="comments"
               cols="6"
               rows="5"
               placeholder="Введіть текст"
             ></textarea>
-            <label for="comments" class="form-label">Коментар</label>
+            <label for="comments" class="form__label">Коментар</label>
           </div>
-          <div class="form-callback">
-            <label class="police-text">
-              <input type="checkbox" class="police-input" name="user-police" />
-              <svg width="16" height="15" class="police-icon">
+
+          <div class="form">
+            <label class="police">
+              <input type="checkbox" class="police__input" name="user-police" />
+              <svg width="16" height="15" class="police__icon">
                 <use href="./images/icons/icons.svg#icon-check"></use>
               </svg>
-              <p>
-                Погоджуюся з розсилкою та приймаю <a class="police-link" href="#">Умови договору</a>
+              <p class="police__subtitle">
+                Погоджуюся з розсилкою та приймаю <a class="police__link" href="#">Умови договору</a>
               </p>
             </label>
           </div>

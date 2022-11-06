@@ -1,5 +1,9 @@
 /* СТИЛІ ЧИМ ЗАЙМАЄМОСЯ */
 
+.what-dowedo {
+  @include section ();
+}
+
 .what-dowedo__title {
   margin-bottom: 50px;
   font-size: 36px;

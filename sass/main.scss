@@ -1,8 +1,8 @@
 @import "./base/normalize";            /* Стилі нормалізатора */
 @import "./base/reset-styles";         /* Стилі reset */
+@import "./utils/vars";                /* Змінні CSS */
 @import "./base/base-styles";          /* Стилі контейнера і body */
 @import "./utils/mixin";               /* Mixin */
-@import "./utils/vars";                /* Змінні CSS */
 @import "./utils/visually-hidden";     /* visually-hidden */
 @import "./components/header";         /* Стилі шапки сайта*/
 @import "./components/hero";           /* Стилі блока герой */

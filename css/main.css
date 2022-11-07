@@ -291,11 +291,6 @@ li {
   margin: 0;
 }
 
-:focus,
-:active {
-  outline: none;
-}
-
 /* Стилі reset */
 /* Змінні CSS */
 /* СТИЛІ КОНТЕЙНЕРА */
